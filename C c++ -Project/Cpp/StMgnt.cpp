@@ -10,6 +10,7 @@ void enter()
 
 {
 
+
 		int ch=0;
 
 			cout<<"How many students do u want to enter??"<<endl;
@@ -28,29 +29,30 @@ void enter()
 
 				cout<<"\nEnter the Data of student "<<i+1<<endl<<endl;
 
-				cout<<"Enter name ";
+				cout<<"Enter name: ";
 
 				cin>>arr1[i];
 
-				cout<<"Enter Roll no ";
+				cout<<"Enter Roll no: ";
 
 				cin>>arr2[i];
 
-				cout<<"Enter course ";
+				cout<<"Enter course: ";
 
 				cin>>arr3[i];
 
-				cout<<"Enter class ";
+				cout<<"Enter class: ";
 
 				cin>>arr4[i];
 
-				cout<<"Enter contact ";
+				cout<<"Enter contact: ";
 
 				cin>>arr5[i];
 
 
 
 			}
+
 
 	    	}
 
@@ -66,23 +68,23 @@ void enter()
 
 				cout<<"\nEnter the Data of student "<<i+1<<endl<<endl;
 
-				cout<<"Enter name ";
+				cout<<"Enter name: ";
 
 				cin>>arr1[i];
 
-				cout<<"Enter Roll no ";
+				cout<<"Enter Roll no: ";
 
 				cin>>arr2[i];
 
-				cout<<"Enter course ";
+				cout<<"Enter course: ";
 
 				cin>>arr3[i];
 
-				cout<<"Enter class ";
+				cout<<"Enter class: ";
 
 				cin>>arr4[i];
 
-				cout<<"Enter contact ";
+				cout<<"Enter contact: ";
 
 				cin>>arr5[i];
 
@@ -116,15 +118,15 @@ void show()
 
 	    		cout<<"\nData of Student "<<i+1<<endl<<endl;
 
-	    		cout<<"Name "<<arr1[i]<<endl;
+	    		cout<<"Name: "<<arr1[i]<<endl;
 
-	    		cout<<"Roll no "<<arr2[i]<<endl;
+	    		cout<<"Roll no: "<<arr2[i]<<endl;
 
-	    		cout<<"Course "<<arr3[i]<<endl;
+	    		cout<<"Course: "<<arr3[i]<<endl;
 
-	    		cout<<"Class "<<arr4[i]<<endl;
+	    		cout<<"Class: "<<arr4[i]<<endl;
 
-	    		cout<<"Contact "<<arr5[i]<<endl;
+	    		cout<<"Contact: "<<arr5[i]<<endl;
 
 	    	    }
 
@@ -160,15 +162,15 @@ void search()
 
 					{
 
-						cout<<"Name "<<arr1[i]<<endl;
+						cout<<"Name: "<<arr1[i]<<endl;
 
-	    	        	cout<<"Roll no "<<arr2[i]<<endl;
+	    	        	cout<<"Roll no: "<<arr2[i]<<endl;
 
-	    		        cout<<"Course "<<arr3[i]<<endl;
+	    		        cout<<"Course: "<<arr3[i]<<endl;
 
-	    		        cout<<"Class "<<arr4[i]<<endl;
+	    		        cout<<"Class: "<<arr4[i]<<endl;
 
-	    	        	cout<<"Contact "<<arr5[i]<<endl;
+	    	        	cout<<"Contact: "<<arr5[i]<<endl;
 
 					}
 
@@ -208,37 +210,37 @@ void update()
 
 						cout<<"\nPrevious data"<<endl<<endl;
 
-						cout<<"Data of Student "<<i+1<<endl;
+						cout<<"Data of Student: "<<i+1<<endl;
 
-						cout<<"Name "<<arr1[i]<<endl;
+						cout<<"Name: "<<arr1[i]<<endl;
 
-	    	        	cout<<"Roll no "<<arr2[i]<<endl;
+	    	        	cout<<"Roll no: "<<arr2[i]<<endl;
 
-	    		        cout<<"Course "<<arr3[i]<<endl;
+	    		        cout<<"Course: "<<arr3[i]<<endl;
 
-	    		        cout<<"Class "<<arr4[i]<<endl;
+	    		        cout<<"Class: "<<arr4[i]<<endl;
 
-	    	        	cout<<"Contact "<<arr5[i]<<endl;
+	    	        	cout<<"Contact: "<<arr5[i]<<endl;
 
 	    	        	cout<<"\nEnter new data"<<endl<<endl;
 
-							cout<<"Enter name ";
+							cout<<"Enter name: ";
 
 				            cin>>arr1[i];
 
-				            cout<<"Enter Roll no ";
+				            cout<<"Enter Roll no: ";
 
 				            cin>>arr2[i];
 
-			             	cout<<"Enter course ";
+			             	cout<<"Enter course: ";
 
 				            cin>>arr3[i];
 
-				            cout<<"Enter class ";
+				            cout<<"Enter class: ";
 
 				            cin>>arr4[i];
 
-				            cout<<"Enter contact ";
+				            cout<<"Enter contact: ";
 
 				            cin>>arr5[i];
 
@@ -348,6 +350,7 @@ main()
 
 {
 
+
 	int value;
 
 	while(true)
@@ -368,11 +371,13 @@ main()
 
 	cout<<"\t\t\t\t---------------Press 6 to exit-------------------------\n"<<endl;
 
+
 	cin>>value;
 
 	switch(value)
 
 	{
+
 
 		case 1:
 
@@ -418,6 +423,8 @@ main()
 
 	}
 
+
 }
+ system("cls");
 
 }

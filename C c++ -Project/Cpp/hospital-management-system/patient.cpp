@@ -3,7 +3,8 @@
 #include<fstream>
 #include <cstring>
 
-class patient : public Person {
+class patient :
+     public Person {
     private:
         int patientId;
         Disease disease;
@@ -34,7 +35,7 @@ class patient : public Person {
 
             getPatientInformation();
             ofstream patientDatabase(patientFile,ios::binary | ios::out | ios::app);
-			patientDatabase.write((char*)this,sizeof(patient));	
+			patientDatabase.write((char*)this,sizeof(patient));
         }
 
         // show patient data
@@ -53,7 +54,7 @@ class patient : public Person {
 				if(readdatafromdatabase.read((char*)this,sizeof(patient)))
 					showPatientData();
 			}
-        }        
+        }
 
         // deleting patient details from file
         void dischargePatient() {
@@ -65,7 +66,7 @@ class patient : public Person {
             ifpatient.open(patientFile, ios::in | ios::binary);
 			ofstream ofpatient;
             ofpatient.open(patientTempFile, ios::out | ios::binary);
-            
+
 			while(!ifpatient.eof()){
 				ifpatient.read((char*)this,sizeof(patient));
                 if(ifpatient) {
@@ -85,7 +86,7 @@ class patient : public Person {
 			remove(patientFile);
 			rename(patientTempFile,patientFile);
 			showPatientDataFromFile();
-            
+
             if (flag == 1)
                 cout << "\nRecord successfully deleted \n";
             else
@@ -104,8 +105,8 @@ class patient : public Person {
                 // storing the position of
                 // current file pointeri.e. at
                 // the end of previously read record
-                pos = fpatient.tellg(); 
-                               
+                pos = fpatient.tellg();
+
 				fpatient.read((char*)this,sizeof(patient));
                 if(fpatient) {
 
@@ -124,7 +125,7 @@ class patient : public Person {
 
                         // writing the object to the file
                         fpatient.write((char*)this,sizeof(patient));
-			            
+
                         // display the data
                         showPatientData();
                         break;
@@ -151,11 +152,11 @@ class patient : public Person {
                 cin >> choice;
                 if (choice == 1){
                         do{
-                        
+
                         addPatient();
                         cout << "add another patient ? 1 for yes ";
                         cin >> flag;
-                    
+
                         }while (flag == 1);
                     }
                 else if(choice == 2){
@@ -163,7 +164,7 @@ class patient : public Person {
                 }
                 else if (choice == 3){
                     dischargePatient();
-                }	
+                }
                 else if (choice == 4) {
                     editPatient();
                 }

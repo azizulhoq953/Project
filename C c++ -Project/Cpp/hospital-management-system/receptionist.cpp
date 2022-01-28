@@ -7,11 +7,12 @@ int main() {
     int choice;
 
     do{
+        cout << "\n\n    ------------------------------------------Hospital Management Software---------------------------------------  "<<endl;
         cout << "\n\nEnter option 1 for patient "<<endl;
         cout << "Enter option 2 for doctor " << endl;
         cout << "Enter option 3 to exit program " << endl;
         cin >> choice;
-        
+
         switch (choice)
         {
         case 1: cout << "\n--- Patient ---"<<endl;
@@ -21,7 +22,7 @@ int main() {
         case 2: cout << "\n--- Doctor ---"<<endl;
                 d.doDoctorRelatedWork();
             break;
-        
+
         default:
             break;
         }

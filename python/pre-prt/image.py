@@ -1,6 +1,6 @@
 import cv2
 import matplotlib.pyplot as plt
-img=cv2.imread("img/photo.jpg")
+img=cv2.imread("img/nng.jpg")
 
 # cv2.imshow('orginal image',img)
 # cv2.waitKey(0)
